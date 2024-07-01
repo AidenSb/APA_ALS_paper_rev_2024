@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 139, in main_train
+    train_loss, train_corr = train_one_epoch(model, train_loader)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 60, in train_one_epoch
+    outputs = torch.squeeze(model(seq_X, celltype))
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 122, in forward
+    x = self.process_self_attn(x)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/blocks.py", line 99, in forward
+    return self.transformer(latent)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 280, in forward
+    output = mod(output, src_mask=mask, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 539, in forward
+    x = self.norm2(x + self._ff_block(x))
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 554, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 800.00 MiB (GPU 2; 11.78 GiB total capacity; 9.69 GiB already allocated; 566.19 MiB free; 10.04 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

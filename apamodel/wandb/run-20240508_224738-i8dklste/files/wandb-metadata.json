@@ -1,0 +1,155 @@
+{
+    "os": "Linux-5.15.0-73-generic-x86_64-with-glibc2.35",
+    "python": "3.10.8",
+    "heartbeatAt": "2024-05-08T22:47:39.336054",
+    "startedAt": "2024-05-08T22:47:38.815925",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/ctrl_rbp_profile/train_fold_2.npy",
+        "--valid_data",
+        "/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/ctrl_rbp_profile/test_fold_2.npy",
+        "--modelfile",
+        "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08/test_3.pt",
+        "--project_name",
+        "APA-Net_transformer_V1",
+        "--device",
+        "cuda:3",
+        "--use_wandb",
+        "True",
+        "--batch_size",
+        "128"
+    ],
+    "state": "running",
+    "program": "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py",
+    "codePathLocal": "train_script.py",
+    "codePath": "apamodel/train_script.py",
+    "git": {
+        "remote": "https://github.com/AidenSb/APA-Net.git",
+        "commit": "f0078d2fc19136ad2566bc16b6a88964bffded7e"
+    },
+    "email": "aiden.sababi@gmail.com",
+    "root": "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2",
+    "host": "titan4",
+    "username": "aiden",
+    "executable": "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3212.3145624999997,
+        "min": 1200.0,
+        "max": 3700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2309.919,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3699.998,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3677.632,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2621.277,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 884.8000869750977,
+            "used": 384.48060607910156
+        }
+    },
+    "gpu": "NVIDIA TITAN V",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN V",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN V",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN V",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "NVIDIA TITAN V",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 250.53748321533203
+    }
+}

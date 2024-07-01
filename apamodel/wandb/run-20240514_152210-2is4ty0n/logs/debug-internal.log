@@ -1,0 +1,187 @@
+2024-05-14 15:22:10,632 INFO    StreamThr :1996633 [internal.py:wandb_internal():86] W&B internal server running at pid: 1996633, started at: 2024-05-14 15:22:10.631516
+2024-05-14 15:22:10,634 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: status
+2024-05-14 15:22:10,635 INFO    WriterThread:1996633 [datastore.py:open_for_write():87] open: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/run-2is4ty0n.wandb
+2024-05-14 15:22:10,651 DEBUG   SenderThread:1996633 [sender.py:send():382] send: header
+2024-05-14 15:22:10,652 DEBUG   SenderThread:1996633 [sender.py:send():382] send: run
+2024-05-14 15:22:10,872 INFO    SenderThread:1996633 [dir_watcher.py:__init__():211] watching files in: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files
+2024-05-14 15:22:10,872 INFO    SenderThread:1996633 [sender.py:_start_run_threads():1136] run started: 2is4ty0n with start time 1715700130.631149
+2024-05-14 15:22:10,891 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: check_version
+2024-05-14 15:22:10,892 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: check_version
+2024-05-14 15:22:11,009 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: run_start
+2024-05-14 15:22:11,036 DEBUG   HandlerThread:1996633 [system_info.py:__init__():27] System info init
+2024-05-14 15:22:11,037 DEBUG   HandlerThread:1996633 [system_info.py:__init__():42] System info init done
+2024-05-14 15:22:11,037 INFO    HandlerThread:1996633 [system_monitor.py:start():194] Starting system monitor
+2024-05-14 15:22:11,037 INFO    SystemMonitor:1996633 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-14 15:22:11,038 INFO    HandlerThread:1996633 [system_monitor.py:probe():214] Collecting system info
+2024-05-14 15:22:11,039 INFO    SystemMonitor:1996633 [interfaces.py:start():190] Started cpu monitoring
+2024-05-14 15:22:11,040 INFO    SystemMonitor:1996633 [interfaces.py:start():190] Started disk monitoring
+2024-05-14 15:22:11,041 INFO    SystemMonitor:1996633 [interfaces.py:start():190] Started gpu monitoring
+2024-05-14 15:22:11,043 INFO    SystemMonitor:1996633 [interfaces.py:start():190] Started memory monitoring
+2024-05-14 15:22:11,044 INFO    SystemMonitor:1996633 [interfaces.py:start():190] Started network monitoring
+2024-05-14 15:22:11,123 DEBUG   HandlerThread:1996633 [system_info.py:probe():151] Probing system
+2024-05-14 15:22:11,127 DEBUG   HandlerThread:1996633 [system_info.py:_probe_git():136] Probing git
+2024-05-14 15:22:11,142 DEBUG   HandlerThread:1996633 [system_info.py:_probe_git():144] Probing git done
+2024-05-14 15:22:11,142 DEBUG   HandlerThread:1996633 [system_info.py:probe():199] Probing system done
+2024-05-14 15:22:11,142 DEBUG   HandlerThread:1996633 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-73-generic-x86_64-with-glibc2.35', 'python': '3.10.8', 'heartbeatAt': '2024-05-14T15:22:11.123548', 'startedAt': '2024-05-14T15:22:10.625367', 'docker': None, 'cuda': None, 'args': ('--train_data', '/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/no_zeroing/ctrl_rbp_profile/train_fold_0.npy', '--valid_data', '/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/no_zeroing/ctrl_rbp_profile/test_fold_0.npy', '--modelfile', '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08/model_out_fold0.pt', '--project_name', 'APA-Net_transformer_V1_final_round', '--device', 'cuda:2', '--use_wandb', 'True', '--batch_size', '256', '--epochs', '500'), 'state': 'running', 'program': '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py', 'codePathLocal': 'train_script.py', 'codePath': 'apamodel/train_script.py', 'git': {'remote': 'https://github.com/AidenSb/APA-Net.git', 'commit': '4e786c212130a7b5588b1c833907cc46d67ce02f'}, 'email': 'aiden.sababi@gmail.com', 'root': '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2', 'host': 'titan4', 'username': 'aiden', 'executable': '/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3406.3221875, 'min': 1200.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3700.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 1200.06, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 1227.988, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}], 'disk': {'/': {'total': 884.8000869750977, 'used': 384.73192977905273}}, 'gpu': 'NVIDIA TITAN V', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}], 'memory': {'total': 250.53748321533203}}
+2024-05-14 15:22:11,142 INFO    HandlerThread:1996633 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-14 15:22:11,142 INFO    HandlerThread:1996633 [system_monitor.py:probe():227] Publishing system info
+2024-05-14 15:22:11,142 DEBUG   HandlerThread:1996633 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-14 15:22:11,876 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/conda-environment.yaml
+2024-05-14 15:22:13,874 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/conda-environment.yaml
+2024-05-14 15:22:13,912 DEBUG   HandlerThread:1996633 [system_info.py:_save_conda():220] Saving conda packages done
+2024-05-14 15:22:13,913 INFO    HandlerThread:1996633 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-14 15:22:13,917 DEBUG   SenderThread:1996633 [sender.py:send():382] send: files
+2024-05-14 15:22:13,918 INFO    SenderThread:1996633 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-05-14 15:22:13,950 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-14 15:22:13,951 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:22:13,951 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:22:13,952 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: python_packages
+2024-05-14 15:22:13,953 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:22:14,143 DEBUG   SenderThread:1996633 [sender.py:send():382] send: telemetry
+2024-05-14 15:22:14,350 INFO    wandb-upload_0:1996633 [upload_job.py:push():131] Uploaded file /tmp/tmp8oc5f95xwandb/61wwx9yl-wandb-metadata.json
+2024-05-14 15:22:14,874 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-metadata.json
+2024-05-14 15:22:14,875 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/requirements.txt
+2024-05-14 15:22:16,145 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:22:17,512 DEBUG   SenderThread:1996633 [sender.py:send():382] send: telemetry
+2024-05-14 15:22:17,512 DEBUG   SenderThread:1996633 [sender.py:send():382] send: exit
+2024-05-14 15:22:17,513 INFO    SenderThread:1996633 [sender.py:send_exit():589] handling exit code: 1
+2024-05-14 15:22:17,513 INFO    SenderThread:1996633 [sender.py:send_exit():591] handling runtime: 6
+2024-05-14 15:22:17,515 INFO    SenderThread:1996633 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:22:17,516 INFO    SenderThread:1996633 [sender.py:send_exit():597] send defer
+2024-05-14 15:22:17,516 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:17,516 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-14 15:22:17,517 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:17,517 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-14 15:22:17,517 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 1
+2024-05-14 15:22:17,518 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:17,518 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-14 15:22:17,518 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:17,519 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-14 15:22:17,519 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 2
+2024-05-14 15:22:17,519 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:17,519 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-14 15:22:17,519 INFO    HandlerThread:1996633 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-14 15:22:17,520 DEBUG   SystemMonitor:1996633 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-14 15:22:17,520 INFO    HandlerThread:1996633 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-14 15:22:17,521 DEBUG   SystemMonitor:1996633 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-14 15:22:17,521 INFO    HandlerThread:1996633 [interfaces.py:finish():202] Joined disk monitor
+2024-05-14 15:22:17,521 DEBUG   SystemMonitor:1996633 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-14 15:22:17,876 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-summary.json
+2024-05-14 15:22:17,877 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/output.log
+2024-05-14 15:22:18,176 INFO    HandlerThread:1996633 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-14 15:22:18,176 INFO    HandlerThread:1996633 [interfaces.py:finish():202] Joined memory monitor
+2024-05-14 15:22:18,177 INFO    HandlerThread:1996633 [interfaces.py:finish():202] Joined network monitor
+2024-05-14 15:22:18,178 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,178 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-14 15:22:18,178 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 3
+2024-05-14 15:22:18,178 DEBUG   SenderThread:1996633 [sender.py:send():382] send: stats
+2024-05-14 15:22:18,178 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:18,178 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-14 15:22:18,179 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,179 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-14 15:22:18,179 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 4
+2024-05-14 15:22:18,179 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:18,179 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-14 15:22:18,179 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,180 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-14 15:22:18,180 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 5
+2024-05-14 15:22:18,180 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:18,180 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-14 15:22:18,180 DEBUG   SenderThread:1996633 [sender.py:send():382] send: summary
+2024-05-14 15:22:18,181 INFO    SenderThread:1996633 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:22:18,181 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,181 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-14 15:22:18,181 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 6
+2024-05-14 15:22:18,181 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:18,181 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-14 15:22:18,182 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,182 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-14 15:22:18,184 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:22:18,272 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 7
+2024-05-14 15:22:18,273 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:18,273 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-14 15:22:18,274 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:18,274 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-14 15:22:18,469 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:22:18,877 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-summary.json
+2024-05-14 15:22:18,877 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/config.yaml
+2024-05-14 15:22:19,477 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 8
+2024-05-14 15:22:19,477 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:22:19,477 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:19,478 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-14 15:22:19,478 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:19,478 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-14 15:22:19,479 INFO    SenderThread:1996633 [job_builder.py:build():296] Attempting to build job artifact
+2024-05-14 15:22:19,479 INFO    SenderThread:1996633 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-05-14 15:22:19,514 INFO    SenderThread:1996633 [job_builder.py:build():402] adding wandb-job metadata file
+2024-05-14 15:22:19,598 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 9
+2024-05-14 15:22:19,599 DEBUG   SenderThread:1996633 [sender.py:send():382] send: artifact
+2024-05-14 15:22:19,599 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:19,602 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-14 15:22:19,877 INFO    Thread-13 :1996633 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/output.log
+2024-05-14 15:22:20,409 INFO    SenderThread:1996633 [sender.py:send_artifact():1494] sent artifact job-https___github.com_AidenSb_APA-Net.git_apamodel_train_script.py - {'id': 'QXJ0aWZhY3Q6ODM2MTE5NDgy', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDc0NjMxNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODM2MTQ0NTE4', 'versionIndex': 1}}}
+2024-05-14 15:22:20,409 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:20,410 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-14 15:22:20,410 INFO    SenderThread:1996633 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-14 15:22:20,470 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:22:20,879 INFO    SenderThread:1996633 [dir_watcher.py:finish():388] scan: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files
+2024-05-14 15:22:20,879 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-summary.json wandb-summary.json
+2024-05-14 15:22:20,880 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/config.yaml config.yaml
+2024-05-14 15:22:20,884 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-metadata.json wandb-metadata.json
+2024-05-14 15:22:20,885 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/conda-environment.yaml conda-environment.yaml
+2024-05-14 15:22:20,889 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/output.log output.log
+2024-05-14 15:22:20,890 INFO    SenderThread:1996633 [dir_watcher.py:finish():402] scan save: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/requirements.txt requirements.txt
+2024-05-14 15:22:20,897 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 10
+2024-05-14 15:22:20,898 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:22:20,901 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:20,901 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-14 15:22:20,902 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:20,903 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-05-14 15:22:20,903 INFO    SenderThread:1996633 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-14 15:22:21,159 INFO    wandb-upload_0:1996633 [upload_job.py:push():131] Uploaded file /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/wandb-summary.json
+2024-05-14 15:22:21,247 INFO    wandb-upload_1:1996633 [upload_job.py:push():131] Uploaded file /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/config.yaml
+2024-05-14 15:22:21,287 INFO    wandb-upload_2:1996633 [upload_job.py:push():131] Uploaded file /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/conda-environment.yaml
+2024-05-14 15:22:21,297 INFO    wandb-upload_4:1996633 [upload_job.py:push():131] Uploaded file /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/requirements.txt
+2024-05-14 15:22:21,325 INFO    wandb-upload_3:1996633 [upload_job.py:push():131] Uploaded file /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/files/output.log
+2024-05-14 15:22:21,471 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:22:21,472 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:22:21,525 INFO    Thread-12 (_thread_body):1996633 [sender.py:transition_state():617] send defer: 11
+2024-05-14 15:22:21,526 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:21,526 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-14 15:22:21,527 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:21,527 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-05-14 15:22:21,527 INFO    SenderThread:1996633 [file_pusher.py:join():181] waiting for file pusher
+2024-05-14 15:22:21,528 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 12
+2024-05-14 15:22:21,528 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:21,528 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-14 15:22:21,529 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:21,529 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-05-14 15:22:21,529 INFO    SenderThread:1996633 [file_stream.py:finish():595] file stream finish called
+2024-05-14 15:22:21,627 INFO    SenderThread:1996633 [file_stream.py:finish():599] file stream finish is done
+2024-05-14 15:22:21,628 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 13
+2024-05-14 15:22:21,628 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:21,628 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-14 15:22:21,629 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:21,629 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-05-14 15:22:21,629 INFO    SenderThread:1996633 [sender.py:transition_state():617] send defer: 14
+2024-05-14 15:22:21,630 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:22:21,630 DEBUG   SenderThread:1996633 [sender.py:send():382] send: final
+2024-05-14 15:22:21,630 INFO    HandlerThread:1996633 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-14 15:22:21,630 DEBUG   SenderThread:1996633 [sender.py:send():382] send: footer
+2024-05-14 15:22:21,631 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:22:21,631 INFO    SenderThread:1996633 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-05-14 15:22:21,632 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:22:21,633 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:22:21,635 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:22:21,636 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: server_info
+2024-05-14 15:22:21,636 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: server_info
+2024-05-14 15:22:21,676 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-14 15:22:21,677 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-14 15:22:21,677 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: job_info
+2024-05-14 15:22:21,706 DEBUG   SenderThread:1996633 [sender.py:send_request():409] send_request: job_info
+2024-05-14 15:22:21,725 DEBUG   HandlerThread:1996633 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-14 15:22:21,725 INFO    HandlerThread:1996633 [handler.py:finish():869] shutting down handler
+2024-05-14 15:22:22,678 INFO    WriterThread:1996633 [datastore.py:close():296] close: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_152210-2is4ty0n/run-2is4ty0n.wandb
+2024-05-14 15:22:22,706 INFO    SenderThread:1996633 [sender.py:finish():1572] shutting down sender
+2024-05-14 15:22:22,706 INFO    SenderThread:1996633 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-14 15:22:22,707 INFO    SenderThread:1996633 [file_pusher.py:join():181] waiting for file pusher

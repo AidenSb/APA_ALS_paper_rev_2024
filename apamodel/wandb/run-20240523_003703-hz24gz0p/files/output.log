@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 140, in main_train
+    train_loss, train_corr = train_one_epoch(model, train_loader)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 58, in train_one_epoch
+    for seq_X, Y, celltype, _, _ in train_loader:
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 41, in __getitem__
+    seq = self.oneH_seqs[idx].type(torch.cuda.FloatTensor)
+KeyboardInterrupt

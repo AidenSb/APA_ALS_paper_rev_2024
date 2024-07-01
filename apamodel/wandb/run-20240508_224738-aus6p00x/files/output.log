@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 127, in main_train
+    model = APANET(config)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 58, in __init__
+    self._build_model()
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 97, in _build_model
+    self.fc2 = FCBlock(
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/blocks.py", line 62, in __init__
+    layers.append(nn.Dropout(p=dropouts[i]))
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/dropout.py", line 16, in __init__
+    raise ValueError("dropout probability has to be between 0 and 1, "
+ValueError: dropout probability has to be between 0 and 1, but got 2.0

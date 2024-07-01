@@ -1,0 +1,816 @@
+2024-05-14 15:01:39,398 INFO    StreamThr :1865299 [internal.py:wandb_internal():86] W&B internal server running at pid: 1865299, started at: 2024-05-14 15:01:39.397641
+2024-05-14 15:01:39,400 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status
+2024-05-14 15:01:39,405 INFO    WriterThread:1865299 [datastore.py:open_for_write():87] open: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/run-cit7g4et.wandb
+2024-05-14 15:01:39,406 DEBUG   SenderThread:1865299 [sender.py:send():382] send: header
+2024-05-14 15:01:39,414 DEBUG   SenderThread:1865299 [sender.py:send():382] send: run
+2024-05-14 15:01:39,709 INFO    SenderThread:1865299 [dir_watcher.py:__init__():211] watching files in: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files
+2024-05-14 15:01:39,710 INFO    SenderThread:1865299 [sender.py:_start_run_threads():1136] run started: cit7g4et with start time 1715698899.398066
+2024-05-14 15:01:39,725 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: check_version
+2024-05-14 15:01:39,726 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: check_version
+2024-05-14 15:01:39,841 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: run_start
+2024-05-14 15:01:39,864 DEBUG   HandlerThread:1865299 [system_info.py:__init__():27] System info init
+2024-05-14 15:01:39,864 DEBUG   HandlerThread:1865299 [system_info.py:__init__():42] System info init done
+2024-05-14 15:01:39,865 INFO    HandlerThread:1865299 [system_monitor.py:start():194] Starting system monitor
+2024-05-14 15:01:39,865 INFO    SystemMonitor:1865299 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-14 15:01:39,866 INFO    HandlerThread:1865299 [system_monitor.py:probe():214] Collecting system info
+2024-05-14 15:01:39,866 INFO    SystemMonitor:1865299 [interfaces.py:start():190] Started cpu monitoring
+2024-05-14 15:01:39,868 INFO    SystemMonitor:1865299 [interfaces.py:start():190] Started disk monitoring
+2024-05-14 15:01:39,869 INFO    SystemMonitor:1865299 [interfaces.py:start():190] Started gpu monitoring
+2024-05-14 15:01:39,870 INFO    SystemMonitor:1865299 [interfaces.py:start():190] Started memory monitoring
+2024-05-14 15:01:39,872 INFO    SystemMonitor:1865299 [interfaces.py:start():190] Started network monitoring
+2024-05-14 15:01:39,926 DEBUG   HandlerThread:1865299 [system_info.py:probe():151] Probing system
+2024-05-14 15:01:39,929 DEBUG   HandlerThread:1865299 [system_info.py:_probe_git():136] Probing git
+2024-05-14 15:01:39,943 DEBUG   HandlerThread:1865299 [system_info.py:_probe_git():144] Probing git done
+2024-05-14 15:01:39,943 DEBUG   HandlerThread:1865299 [system_info.py:probe():199] Probing system done
+2024-05-14 15:01:39,943 DEBUG   HandlerThread:1865299 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-73-generic-x86_64-with-glibc2.35', 'python': '3.10.8', 'heartbeatAt': '2024-05-14T15:01:39.926265', 'startedAt': '2024-05-14T15:01:39.371722', 'docker': None, 'cuda': None, 'args': ('--train_data', '/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/no_zeroing/ctrl_rbp_profile/train_fold_1.npy', '--valid_data', '/data/users/goodarzilab/aiden/projects/APA/input_data/2024_rev/no_zeroing/ctrl_rbp_profile/test_fold_1.npy', '--modelfile', '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08/model_out_fold1.pt', '--project_name', 'APA-Net_transformer_V1_final_round', '--device', 'cuda:3', '--use_wandb', 'True', '--batch_size', '256', '--epochs', '1500'), 'state': 'running', 'program': '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py', 'codePathLocal': 'train_script.py', 'codePath': 'apamodel/train_script.py', 'git': {'remote': 'https://github.com/AidenSb/APA-Net.git', 'commit': '4e786c212130a7b5588b1c833907cc46d67ce02f'}, 'email': 'aiden.sababi@gmail.com', 'root': '/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2', 'host': 'titan4', 'username': 'aiden', 'executable': '/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3351.4348125, 'min': 1200.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3664.853, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 1958.081, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3700.0}, {'current': 1200.023, 'min': 1200.0, 'max': 3700.0}], 'disk': {'/': {'total': 884.8000869750977, 'used': 384.7319145202637}}, 'gpu': 'NVIDIA TITAN V', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}, {'name': 'NVIDIA TITAN V', 'memory_total': 12884901888}], 'memory': {'total': 250.53748321533203}}
+2024-05-14 15:01:39,943 INFO    HandlerThread:1865299 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-14 15:01:39,943 INFO    HandlerThread:1865299 [system_monitor.py:probe():227] Publishing system info
+2024-05-14 15:01:39,943 DEBUG   HandlerThread:1865299 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-14 15:01:40,713 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/conda-environment.yaml
+2024-05-14 15:01:42,680 DEBUG   HandlerThread:1865299 [system_info.py:_save_conda():220] Saving conda packages done
+2024-05-14 15:01:42,681 INFO    HandlerThread:1865299 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-14 15:01:42,684 DEBUG   SenderThread:1865299 [sender.py:send():382] send: files
+2024-05-14 15:01:42,685 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-05-14 15:01:42,719 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-14 15:01:42,719 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:01:42,720 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:01:42,721 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/conda-environment.yaml
+2024-05-14 15:01:42,721 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: python_packages
+2024-05-14 15:01:42,722 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-metadata.json
+2024-05-14 15:01:42,723 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:01:42,897 DEBUG   SenderThread:1865299 [sender.py:send():382] send: telemetry
+2024-05-14 15:01:43,125 INFO    wandb-upload_0:1865299 [upload_job.py:push():131] Uploaded file /tmp/tmp4s5rqpexwandb/eefcelcm-wandb-metadata.json
+2024-05-14 15:01:43,721 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/requirements.txt
+2024-05-14 15:01:44,898 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:01:49,899 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:01:54,900 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:01:57,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:01:57,696 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:01:57,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:02:00,803 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:05,803 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:10,809 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:11,736 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/config.yaml
+2024-05-14 15:02:12,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:02:12,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:02:12,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:02:16,776 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:18,865 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:02:18,868 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:02:18,869 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:02:18,872 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:02:19,739 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:02:21,874 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:26,875 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:27,694 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:02:27,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:02:27,696 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:02:32,817 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:37,818 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:39,874 DEBUG   SystemMonitor:1865299 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-14 15:02:39,877 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:02:42,694 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:02:42,695 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:02:42,736 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:02:42,827 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:47,829 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:52,788 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:02:52,793 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:02:52,793 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:02:52,800 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:02:53,758 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:02:53,802 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:02:57,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:02:57,695 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:02:57,696 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:02:58,845 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:03,845 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:08,846 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:09,878 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:03:12,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:03:12,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:03:12,736 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:03:13,858 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:18,860 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:23,860 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:26,319 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:03:26,322 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:03:26,322 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:03:26,323 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:03:26,777 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:03:27,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:03:27,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:03:27,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:03:29,834 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:34,835 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:39,835 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:39,880 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:03:42,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:03:42,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:03:42,736 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:03:45,816 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:50,817 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:55,817 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:03:57,695 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:03:57,696 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:03:57,736 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:03:59,577 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:03:59,579 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:03:59,580 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:03:59,581 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:03:59,794 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:04:01,584 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:06,585 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:09,883 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:04:11,885 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:12,696 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:04:12,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:04:12,697 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:04:17,868 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:22,869 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:27,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:04:27,697 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:04:27,740 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:04:28,799 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:32,359 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:04:32,367 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:04:32,367 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:04:32,368 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:04:32,811 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:04:34,370 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:39,371 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:39,890 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:04:42,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:04:42,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:04:42,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:04:44,792 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:49,793 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:54,794 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:04:57,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:04:57,698 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:04:57,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:04:59,860 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:04,861 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:05,001 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:05:05,003 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:05:05,004 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:05:05,007 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:05:05,828 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:05:09,892 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:05:09,894 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:12,696 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:05:12,697 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:05:12,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:05:15,873 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:20,875 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:25,876 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:27,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:05:27,698 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:05:27,740 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:05:31,857 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:36,858 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:37,580 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:05:37,586 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:05:37,586 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:05:37,589 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:05:37,845 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:05:39,894 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:05:41,896 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:42,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:05:42,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:05:42,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:05:47,792 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:52,795 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:05:57,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:05:57,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:05:57,740 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:05:57,841 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:02,841 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:07,842 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:09,895 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:06:10,488 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:06:10,501 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:06:10,502 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:06:10,502 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:06:10,862 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:06:12,697 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:06:12,698 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:06:12,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:06:13,840 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:18,843 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:23,843 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:27,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:06:27,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:06:27,740 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:06:29,821 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:34,822 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:39,822 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:39,897 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:06:42,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:06:42,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:06:42,745 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:06:43,145 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:06:43,148 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:06:43,149 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:06:43,149 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:06:43,879 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:06:45,151 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:50,152 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:55,153 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:06:57,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:06:57,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:06:57,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:07:00,842 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:05,844 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:09,903 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:07:10,905 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:12,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:07:12,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:07:12,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:07:14,953 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:07:14,954 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:07:14,955 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:07:14,955 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:07:15,896 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:07:15,957 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:20,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:25,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:27,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:07:27,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:07:27,704 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:07:31,808 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:36,809 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:39,904 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:07:41,905 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:42,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:07:42,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:07:42,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:07:47,819 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:48,409 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:07:48,417 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:07:48,418 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:07:48,418 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:07:48,911 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:07:53,419 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:07:57,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:07:57,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:07:57,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:07:58,786 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:03,789 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:08,789 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:09,906 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:08:12,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:08:12,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:08:12,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:08:14,786 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:19,788 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:20,896 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:08:20,898 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:08:20,899 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:08:20,899 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:08:20,929 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:08:24,901 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:27,698 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:08:27,699 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:08:27,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:08:30,872 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:35,873 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:39,907 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:08:40,909 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:42,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:08:42,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:08:42,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:08:46,788 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:51,789 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:08:53,748 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:08:53,750 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:08:53,750 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:08:53,751 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:08:53,946 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:08:57,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:08:57,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:08:57,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:08:57,784 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:02,786 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:07,787 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:09,910 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:09:12,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:09:12,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:09:12,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:09:12,828 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:17,829 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:22,830 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:26,491 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:09:26,493 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:09:26,494 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:09:26,495 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:09:26,962 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:09:27,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:09:27,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:09:27,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:09:28,788 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:33,791 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:38,792 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:39,912 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:09:42,699 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:09:42,700 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:09:42,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:09:43,862 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:48,863 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:53,865 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:57,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:09:57,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:09:57,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:09:59,126 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:09:59,127 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:09:59,128 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:09:59,128 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:09:59,129 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:09:59,978 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:10:04,131 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:09,132 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:09,953 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:10:12,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:10:12,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:10:12,706 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:10:14,867 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:19,868 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:24,869 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:27,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:10:27,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:10:27,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:10:30,861 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:32,261 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:10:32,263 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:10:32,264 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:10:32,265 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:10:32,996 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:10:36,268 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:39,917 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:10:41,919 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:42,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:10:42,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:10:42,705 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:10:47,849 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:52,850 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:10:57,701 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:10:57,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:10:57,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:10:58,780 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:03,781 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:05,801 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:11:05,803 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:11:05,803 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:11:05,810 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:11:06,014 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:11:08,812 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:09,919 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:11:12,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:11:12,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:11:12,704 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:11:14,788 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:19,789 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:24,790 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:27,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:11:27,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:11:27,741 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:11:29,795 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:34,797 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:38,383 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:11:38,386 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:11:38,387 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:11:38,390 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:11:39,029 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:11:39,920 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:11:39,921 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:42,700 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:11:42,701 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:11:42,705 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:11:45,833 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:50,834 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:55,834 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:11:57,701 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:11:57,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:11:57,748 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:12:00,886 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:05,887 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:09,925 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:12:10,816 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:12:10,818 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:12:10,819 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:12:10,819 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:12:11,046 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:12:11,821 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:12,701 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:12:12,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:12:12,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:12:17,785 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:22,785 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:27,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:12:27,705 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:12:27,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:12:27,843 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:32,844 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:37,845 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:39,924 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:12:42,701 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:12:42,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:12:42,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:12:42,867 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:43,412 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:12:43,414 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:12:43,415 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:12:43,415 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:12:44,064 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:12:48,417 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:53,418 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:12:57,701 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:12:57,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:12:57,705 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:12:58,782 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:03,784 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:08,785 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:09,926 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:13:12,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:13:12,702 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:13:12,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:13:13,872 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:15,800 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:13:15,802 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:13:15,803 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:13:15,804 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:13:16,081 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:13:19,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:24,807 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:27,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:13:27,703 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:13:27,704 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:13:29,824 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:34,825 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:39,826 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:39,928 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:13:42,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:13:42,705 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:13:42,745 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:13:45,826 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:49,169 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:13:49,171 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:13:49,171 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:13:49,172 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:13:50,097 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:13:51,174 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:56,175 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:13:57,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:13:57,704 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:13:57,705 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:14:01,834 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:06,835 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:09,930 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:14:11,931 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:12,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:14:12,703 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:14:12,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:14:17,880 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:21,718 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:14:21,720 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:14:21,721 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:14:21,722 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:14:22,113 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:14:23,724 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:27,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:14:27,703 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:14:27,709 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:14:28,830 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:33,831 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:38,832 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:39,931 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:14:42,702 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:14:42,703 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:14:42,748 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:14:44,829 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:49,830 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:54,392 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:14:54,393 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:14:54,394 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:14:54,394 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:14:55,127 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:14:55,395 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:14:57,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:14:57,704 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:14:57,704 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:15:00,863 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:05,864 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:09,934 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:15:10,936 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:12,703 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:15:12,704 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:15:12,745 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:15:16,876 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:21,879 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:26,880 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:28,005 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:15:28,013 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:15:28,014 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:15:28,056 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:15:28,178 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:15:28,179 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:15:28,180 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:15:29,143 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:15:32,182 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:37,183 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:39,936 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:15:42,804 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:15:42,805 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:15:42,957 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:15:42,981 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:47,982 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:52,983 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:15:57,805 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:15:57,807 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:15:57,957 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:15:58,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:00,753 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:16:00,755 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:16:00,756 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:16:00,757 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:16:01,164 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:16:04,759 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:09,760 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:09,937 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:16:12,804 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:16:12,805 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:16:12,957 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:16:14,974 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:19,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:24,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:27,804 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:16:27,805 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:16:27,957 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:16:29,990 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:33,196 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:16:33,198 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:16:33,199 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:16:33,200 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:16:34,182 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:16:35,202 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:39,939 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:16:40,941 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:42,805 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:16:42,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:16:42,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:16:45,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:50,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:55,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:16:57,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:16:57,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:16:57,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:17:01,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:05,711 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:17:05,713 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:17:05,713 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:17:05,714 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:17:06,202 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:17:07,717 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:09,941 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:17:12,805 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:17:12,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:17:12,906 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:12,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:17:17,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:22,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:27,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:17:27,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:17:27,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:17:28,974 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:33,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:38,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:39,095 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:17:39,097 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:17:39,097 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:17:39,098 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:17:39,220 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:17:39,943 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:17:42,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:17:42,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:17:42,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:17:44,974 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:49,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:54,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:17:57,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:17:57,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:17:57,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:18:00,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:05,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:09,999 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:18:11,001 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:11,469 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:18:11,471 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:18:11,472 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:18:11,473 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:18:12,238 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:18:12,805 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:18:12,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:18:12,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:18:16,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:21,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:26,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:27,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:18:27,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:18:27,958 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:18:32,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:37,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:39,951 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:18:42,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:18:42,807 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:18:42,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:18:43,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:44,106 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:18:44,108 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:18:44,109 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:18:44,112 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:18:44,256 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:18:49,114 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:54,115 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:18:57,807 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:18:57,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:18:57,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:18:59,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:04,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:09,953 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:19:10,956 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:12,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:19:12,806 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:19:12,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:19:15,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:16,735 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:19:16,737 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:19:16,737 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:19:16,741 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:19:17,273 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:19:21,743 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:26,744 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:27,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:19:27,807 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:19:27,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:19:31,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:36,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:39,955 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:19:42,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:19:42,807 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:19:42,948 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:42,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:19:47,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:49,348 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:19:49,350 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:19:49,350 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:19:49,353 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:19:50,291 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:19:53,355 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:19:57,806 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:19:57,807 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:19:57,959 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:19:58,975 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:03,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:08,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:09,957 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:20:12,807 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:20:12,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:20:12,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:20:14,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:19,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:22,044 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:20:22,046 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:20:22,046 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:20:22,049 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:20:22,308 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:20:25,051 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:27,807 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:20:27,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:20:27,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:20:30,976 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:35,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:39,959 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:20:41,961 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:42,808 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:20:42,809 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:20:42,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:20:46,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:51,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:54,932 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:20:54,933 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:20:54,934 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:20:54,936 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:20:55,327 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:20:57,807 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:20:57,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:20:57,932 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:20:57,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:21:02,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:07,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:09,962 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:21:12,808 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:21:12,809 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:21:12,961 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:21:13,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:18,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:23,979 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:27,495 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 15:21:27,497 DEBUG   SenderThread:1865299 [sender.py:send():382] send: history
+2024-05-14 15:21:27,497 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: summary_record
+2024-05-14 15:21:27,501 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:21:27,808 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:21:27,808 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:21:27,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:21:28,344 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:21:29,977 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:34,978 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:39,962 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:21:40,964 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:42,808 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 15:21:42,809 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: stop_status
+2024-05-14 15:21:42,960 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 15:21:42,994 DEBUG   SenderThread:1865299 [sender.py:send():382] send: telemetry
+2024-05-14 15:21:43,001 DEBUG   SenderThread:1865299 [sender.py:send():382] send: exit
+2024-05-14 15:21:43,001 INFO    SenderThread:1865299 [sender.py:send_exit():589] handling exit code: 1
+2024-05-14 15:21:43,003 INFO    SenderThread:1865299 [sender.py:send_exit():591] handling runtime: 1203
+2024-05-14 15:21:43,003 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:21:43,004 INFO    SenderThread:1865299 [sender.py:send_exit():597] send defer
+2024-05-14 15:21:43,005 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,005 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-14 15:21:43,006 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,006 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-14 15:21:43,006 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 1
+2024-05-14 15:21:43,006 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,007 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-14 15:21:43,007 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,007 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-14 15:21:43,007 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 2
+2024-05-14 15:21:43,008 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,008 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-14 15:21:43,008 INFO    HandlerThread:1865299 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-14 15:21:43,009 DEBUG   SystemMonitor:1865299 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-14 15:21:43,009 DEBUG   SystemMonitor:1865299 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-14 15:21:43,009 INFO    HandlerThread:1865299 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-14 15:21:43,012 INFO    HandlerThread:1865299 [interfaces.py:finish():202] Joined disk monitor
+2024-05-14 15:21:43,350 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:21:43,351 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_created():271] file/dir created: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/output.log
+2024-05-14 15:21:43,630 INFO    HandlerThread:1865299 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-14 15:21:43,630 INFO    HandlerThread:1865299 [interfaces.py:finish():202] Joined memory monitor
+2024-05-14 15:21:43,631 INFO    HandlerThread:1865299 [interfaces.py:finish():202] Joined network monitor
+2024-05-14 15:21:43,632 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,632 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-14 15:21:43,632 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 3
+2024-05-14 15:21:43,632 DEBUG   SenderThread:1865299 [sender.py:send():382] send: stats
+2024-05-14 15:21:43,632 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,634 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-14 15:21:43,634 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,634 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-14 15:21:43,634 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 4
+2024-05-14 15:21:43,635 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,635 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-14 15:21:43,635 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,636 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-14 15:21:43,636 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 5
+2024-05-14 15:21:43,636 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,636 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-14 15:21:43,637 DEBUG   SenderThread:1865299 [sender.py:send():382] send: summary
+2024-05-14 15:21:43,638 INFO    SenderThread:1865299 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-14 15:21:43,638 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,638 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-14 15:21:43,638 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 6
+2024-05-14 15:21:43,639 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,639 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-14 15:21:43,639 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,640 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-14 15:21:43,645 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 15:21:43,745 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 7
+2024-05-14 15:21:43,746 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:43,746 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-14 15:21:43,746 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:43,747 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-14 15:21:44,001 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:21:44,350 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/config.yaml
+2024-05-14 15:21:44,351 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/wandb-summary.json
+2024-05-14 15:21:44,999 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 8
+2024-05-14 15:21:44,999 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:21:44,999 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:45,000 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-14 15:21:45,001 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:45,001 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-14 15:21:45,001 INFO    SenderThread:1865299 [job_builder.py:build():296] Attempting to build job artifact
+2024-05-14 15:21:45,002 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-14 15:21:45,040 INFO    SenderThread:1865299 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-05-14 15:21:45,079 INFO    SenderThread:1865299 [job_builder.py:build():402] adding wandb-job metadata file
+2024-05-14 15:21:45,184 INFO    SenderThread:1865299 [sender.py:transition_state():617] send defer: 9
+2024-05-14 15:21:45,185 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: poll_exit
+2024-05-14 15:21:45,185 DEBUG   HandlerThread:1865299 [handler.py:handle_request():146] handle_request: defer
+2024-05-14 15:21:45,185 DEBUG   SenderThread:1865299 [sender.py:send():382] send: artifact
+2024-05-14 15:21:45,186 INFO    HandlerThread:1865299 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-14 15:21:45,351 INFO    Thread-13 :1865299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/wandb/run-20240514_150139-cit7g4et/files/output.log
+2024-05-14 15:21:45,724 INFO    wandb-upload_1:1865299 [upload_job.py:push():86] Skipped uploading /data/users/goodarzilab/aiden/.local/share/wandb/artifacts/staging/tmph0ohr1hv
+2024-05-14 15:21:46,016 INFO    wandb-upload_0:1865299 [upload_job.py:push():89] Uploaded file /data/users/goodarzilab/aiden/.local/share/wandb/artifacts/staging/tmp5sgp0npa
+2024-05-14 15:21:46,830 INFO    SenderThread:1865299 [sender.py:send_artifact():1494] sent artifact job-https___github.com_AidenSb_APA-Net.git_apamodel_train_script.py - {'id': 'QXJ0aWZhY3Q6ODM2MTQ0NTE4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NDc0NjMxNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODM2MTE5NDgy', 'versionIndex': 0}}}
+2024-05-14 15:21:46,830 DEBUG   SenderThread:1865299 [sender.py:send_request():409] send_request: defer
+2024-05-14 15:21:46,830 INFO    SenderThread:1865299 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-14 15:21:46,831 INFO    SenderThread:1865299 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-14 15:21:47,125 INFO    MainThread:1865299 [internal.py:handle_exit():76] Internal process exited

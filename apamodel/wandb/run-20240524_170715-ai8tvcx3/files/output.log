@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 145, in main_train
+    model.save_model(modelfile)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 144, in save_model
+    torch.save(self.state_dict(), filename)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/serialization.py", line 423, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/serialization.py", line 647, in _save
+    storage = storage.cpu()
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/storage.py", line 120, in cpu
+    return torch.UntypedStorage(self.size()).copy_(self, False)

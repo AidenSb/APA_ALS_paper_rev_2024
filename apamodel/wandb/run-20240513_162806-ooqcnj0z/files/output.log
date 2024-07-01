@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 139, in main_train
+    train_loss, train_corr = train_one_epoch(model, train_loader)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 65, in train_one_epoch
+    model.optimizer.step()
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/optim/optimizer.py", line 140, in wrapper
+    out = func(*args, **kwargs)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/optim/adamw.py", line 162, in step
+    adamw(params_with_grad,
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/optim/adamw.py", line 219, in adamw
+    func(params,
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/optim/adamw.py", line 270, in _single_tensor_adamw
+    param.mul_(1 - lr * weight_decay)
+KeyboardInterrupt

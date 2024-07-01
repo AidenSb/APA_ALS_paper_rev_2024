@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 127, in main_train
+    model = APANET(config)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 58, in __init__
+    self._build_model()
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 103, in _build_model
+    self.config["psa_query_dim"],
+KeyError: 'psa_query_dim'

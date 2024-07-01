@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 131, in main_train
+    train_loss, train_corr = train_one_epoch(model, train_loader)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/train_script.py", line 54, in train_one_epoch
+    outputs = torch.squeeze(model(seq_X, celltype))
+  File "/data/users/goodarzilab/aiden/anaconda3/envs/for_DL/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/users/goodarzilab/aiden/projects/APA/codes/CNN_MATTs/APA-Net_2024_05_08_v2/apamodel/model.py", line 124, in forward
+    x = x + x_conv  # add residual connection
+RuntimeError: The size of tensor a (64) must match the size of tensor b (80) at non-singleton dimension 2
